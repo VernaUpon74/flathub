@@ -15,10 +15,7 @@ finish-args:
   - --persist=.config/arcticfox-config
   - --talk-name=org.freedesktop.portal.Desktop
   - --talk-name=org.freedesktop.portal.FileChooser
-  - --talk-name=org.freedesktop.Flatpak
   - --env=PATH=/app/bin:/usr/bin
-  - --env=WEBKIT_DISABLE_SANDBOX_THIS_IS_DANGEROUS=1
-  - --env=GDK_BACKEND=x11
 
 modules:
   - name: arcticfox-config
@@ -37,8 +34,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/VernaUpon74/cloudy-af.git
-        tag: v1.14.0
-        commit: 79b06961a373f1a5e689ef580a24d04186860138
+        tag: v1.14.1
+        commit: ac78cfb6df075c33d3bb08e6cf4122e84fb0b22e
         dest: source
       - npm-root-sources.json
       - npm-sidecar-sources.json
